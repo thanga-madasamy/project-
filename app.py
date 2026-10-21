@@ -114,6 +114,8 @@ try:
     app.register_blueprint(plc_boltsai_bp)
     from routes.iot_ipv import iot_ipv_app
     app.register_blueprint(iot_ipv_app)
+    from routes.washers import washers_bp
+    app.register_blueprint(washers_bp)
 
 
     print("✅ Registered blueprint", flush=True)
